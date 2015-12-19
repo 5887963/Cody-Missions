@@ -1,0 +1,45 @@
+disableChannels[]={1,2,3,4,5,6};
+respawnDialog = 0;
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 36;
+};
+onLoadName = "FBI - Fallujah";
+onLoadMission = "CNTO playing as an MP team as they run counter-terrorist operations. Version 0.1.0";
+author = "Cody Burton";
+loadScreen = "res\loadImage.jpg";
+overviewText = "CNTO playing as an MP team as they run counter-terrorist operations. Version 0.1.0";
+enableDebugConsole = 1;
+respawn = 3;
+respawndelay = 10;
+respawnOnStart = 0;
+allowFunctionsLog = 1;
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Mission Accomplished";
+		subtitle = "";
+		description = "The mission was a success, good work out there.";
+	};
+};
+
+class CfgFunctions {
+	class cnto {
+		class global {
+			class unitSetup {};
+		};
+		class gear {
+			class assignLoadout {};
+			class clearLoadout {};
+			class setupMunitionsBox {};
+		};
+		class loadouts {
+			file = "functions\gear\loadouts";
+			class basicLO {};
+		};
+	};
+};

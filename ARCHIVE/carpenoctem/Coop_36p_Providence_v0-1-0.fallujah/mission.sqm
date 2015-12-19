@@ -1,0 +1,1844 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Weapons_F_Ammoboxes",
+		"RHS_US_A2_AirImport",
+		"A3_Structures_F_Mil_Helipads",
+		"A3_Air_F_Heli_Light_01",
+		"A3_Soft_F_Gamma_HEMTT",
+		"A3_Structures_F_Households_WIP",
+		"A3_Structures_F_Bootcamp_Training",
+		"A3_Structures_F_Mil_Cargo",
+		"A3_Structures_F_Civ_Lamps",
+		"A3_Data_F",
+		"a3_structures_f_mil_fortification",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles",
+		"A3_Structures_F_Walls",
+		"A3_Signs_F",
+		"A3_Structures_F_Ind_Shed",
+		"A3_Structures_F_Ind_ReservoirTank",
+		"A3_Structures_F_Ind_FuelStation",
+		"rhsusf_c_m1a1",
+		"A3_Structures_F_Kart_Signs_Companies",
+		"rhsusf_c_m113",
+		"RHS_US_A2Port_Armor",
+		"A3_Structures_F_Mil_Flags",
+		"A3_Structures_F_Mil_BagBunker",
+		"A3_Structures_F_Mil_Offices",
+		"A3_Structures_F_Mil_BagFence",
+		"A3_Static_F_Mortar_01",
+		"A3_Structures_F_Wrecks",
+		"CAMisc",
+		"a3_map_altis",
+		"mbg_killhouses_a3",
+		"A3_Modules_F_Effects",
+		"rhsusf_c_fmtv",
+		"rhsusf_c_rg33",
+		"mcc_sandbox",
+		"ace_common",
+		"ace_map",
+		"ace_nametags",
+		"ace_respawn",
+		"ace_weather",
+		"acre_api",
+		"ace_switchunits",
+		"ace_hearing",
+		"ace_medical",
+		"ace_finger",
+		"aia_chernarus_summer_config",
+		"CABuildings2_Misc_Cargo",
+		"rhs_c_weapons",
+		"A3_Structures_F_System",
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Structures_F_Items_Vessels",
+		"A3_Weapons_F_Bootcamp_Ammoboxes"
+	};
+	addOnsAuto[]=
+	{
+		"mcc_sandbox",
+		"ace_common",
+		"ace_map",
+		"ace_nametags",
+		"ace_respawn",
+		"ace_weather",
+		"acre_api",
+		"ace_switchunits",
+		"ace_hearing",
+		"ace_finger",
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"ace_medical",
+		"A3_Structures_F_Items_Vessels",
+		"A3_Weapons_F_Bootcamp_Ammoboxes",
+		"A3_Structures_F_System"
+	};
+	randomSeed=36156;
+	class Intel
+	{
+		briefingName="FBI - Fallujah";
+		overviewText="CNTO playing as an MP team as they run counter-terrorist operations. Version 0.1.0";
+		resistanceWest=0;
+		startWeather=0.19999999;
+		startWind=0.099999994;
+		startWindDir=2.73121;
+		startGust=0.29999998;
+		forecastWeather=0.29999998;
+		forecastWind=0.29999998;
+		forecastWaves=0;
+		forecastGust=0.59999996;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=10;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Groups
+	{
+		items=25;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6426.9106,6.9900022,2033.3102};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="0.5";
+							parentCls="mcc_sandbox_moduleGAIASettings";
+							typeName="aiSkillGen";
+						};
+						class Item1
+						{
+							value="0.3";
+							parentCls="mcc_sandbox_moduleGAIASettings";
+							typeName="aiSkillAim";
+						};
+						class Item2
+						{
+							value="0.4";
+							parentCls="mcc_sandbox_moduleGAIASettings";
+							typeName="aiSkillSpot";
+						};
+						class Item3
+						{
+							value="0.6";
+							parentCls="mcc_sandbox_moduleGAIASettings";
+							typeName="aiSkillCommand";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="mcc_sandbox_moduleGAIASettings";
+							typeName="aiSmoke";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="mcc_sandbox_moduleGAIASettings";
+							typeName="aiSmokeChance";
+						};
+						class Item6
+						{
+							value="1500";
+							parentCls="mcc_sandbox_moduleGAIASettings";
+							typeName="cacheDistance";
+						};
+						class Item7
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleGAIASettings";
+							typeName="gaiacontrol";
+						};
+					};
+					id=0;
+					side="LOGIC";
+					vehicle="mcc_sandbox_moduleGAIASettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6629.6108,7,2033.316};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="cover";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="coverUI";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="coverRecoil";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="coverVault";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="switchWeapons";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="interaction";
+						};
+						class Item6
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="interactionUI";
+						};
+						class Item7
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="survive";
+						};
+					};
+					id=1;
+					side="LOGIC";
+					vehicle="mcc_sandbox_moduleCover";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6526.0591,6.9900022,2033.7692};
+					class args
+					{
+						items=16;
+						class Item0
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="t2t";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="saveGear";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="messages";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="sync";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="nameTags";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="groupMarkers";
+						};
+						class Item6
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="artilleryComputer";
+						};
+						class Item7
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="timeAccel";
+						};
+						class Item8
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="deleteBody";
+						};
+						class Item9
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="respawnMenu";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="sqlPDA";
+						};
+						class Item11
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="commanderConsole";
+						};
+						class Item12
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="squadDialog";
+						};
+						class Item13
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="squadDialogPip";
+						};
+						class Item14
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="logistics";
+						};
+						class Item15
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="roleSelection";
+						};
+					};
+					id=2;
+					side="LOGIC";
+					vehicle="mcc_sandbox_moduleMissionSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6524.1274,6.9900022,1929.066};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="2";
+							parentCls="ACE_ModuleCheckPBOs";
+							typeName="Action";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_ModuleCheckPBOs";
+							typeName="CheckAll";
+						};
+						class Item2
+						{
+							value="[""ares""]";
+							parentCls="ACE_ModuleCheckPBOs";
+							typeName="Whitelist";
+						};
+					};
+					id=3;
+					side="LOGIC";
+					vehicle="ACE_ModuleCheckPBOs";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6628.1265,7,1926.8375};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleMap";
+							typeName="MapIllumination";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_ModuleMap";
+							typeName="MapShake";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ACE_ModuleMap";
+							typeName="MapLimitZoom";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ACE_ModuleMap";
+							typeName="MapShowCursorCoordinates";
+						};
+					};
+					id=4;
+					side="LOGIC";
+					vehicle="ACE_ModuleMap";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6726.7891,7,1927.0426};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="-1";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showPlayerNames";
+						};
+						class Item1
+						{
+							value="25";
+							parentCls="ACE_ModuleNameTags";
+							typeName="playerNamesViewDistance";
+						};
+						class Item2
+						{
+							value="-1";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showNamesForAI";
+						};
+						class Item3
+						{
+							value="-1";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showVehicleCrewInfo";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showCursorTagForVehicles";
+						};
+					};
+					id=5;
+					side="LOGIC";
+					vehicle="ACE_ModuleNameTags";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6829.3125,7,1924.3688};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="0";
+							parentCls="ACE_ModuleRespawn";
+							typeName="SavePreDeathGear";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ACE_ModuleRespawn";
+							typeName="RemoveDeadBodiesDisconnected";
+						};
+					};
+					id=6;
+					side="LOGIC";
+					vehicle="ACE_ModuleRespawn";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6929.9336,7,1927.2184};
+					class args
+					{
+						items=6;
+						class Item0
+						{
+							value="0";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="enableServerController";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="useACEWeather";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncRain";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncWind";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncMisc";
+						};
+						class Item5
+						{
+							value="60";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="serverUpdateInterval";
+						};
+					};
+					id=7;
+					side="LOGIC";
+					vehicle="ace_weather_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6426.8462,6.9900022,1830.5192};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="1";
+							parentCls="acre_api_DifficultySettings";
+							typeName="SignalLoss";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="acre_api_DifficultySettings";
+							typeName="FullDuplex";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="acre_api_DifficultySettings";
+							typeName="Interference";
+						};
+					};
+					id=8;
+					side="LOGIC";
+					vehicle="acre_api_DifficultySettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item9
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6530.6685,6.9906702,1828.8395};
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="1";
+							parentCls="acre_api_nameChannels";
+							typeName="SideSelect";
+						};
+						class Item1
+						{
+							value="PLTNET 1";
+							parentCls="acre_api_nameChannels";
+							typeName="Channel_1";
+						};
+						class Item2
+						{
+							value="PLTNET 2";
+							parentCls="acre_api_nameChannels";
+							typeName="Channel_2";
+						};
+						class Item3
+						{
+							value="PLTNET 3";
+							parentCls="acre_api_nameChannels";
+							typeName="Channel_3";
+						};
+						class Item4
+						{
+							value="COYNET 1";
+							parentCls="acre_api_nameChannels";
+							typeName="Channel_4";
+						};
+						class Item5
+						{
+							value="CASNET 1";
+							parentCls="acre_api_nameChannels";
+							typeName="Channel_5";
+						};
+						class Item6
+						{
+							value="CASNET 2";
+							parentCls="acre_api_nameChannels";
+							typeName="Channel_6";
+						};
+						class Item7
+						{
+							value="CASNET 3";
+							parentCls="acre_api_nameChannels";
+							typeName="Channel_7";
+						};
+						class Item8
+						{
+							value="FIRES";
+							parentCls="acre_api_nameChannels";
+							typeName="Channel_8";
+						};
+						class Item9
+						{
+							value="LOGISTICS";
+							parentCls="acre_api_nameChannels";
+							typeName="Channel_9";
+						};
+						class Item10
+						{
+							value="SUPPORT";
+							parentCls="acre_api_nameChannels";
+							typeName="Channel_10";
+						};
+					};
+					id=9;
+					side="LOGIC";
+					vehicle="acre_api_nameChannels";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item10
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7024.8125,7,1924.5543};
+					class args
+					{
+						items=6;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleSwitchUnits";
+							typeName="SwitchToWest";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_ModuleSwitchUnits";
+							typeName="SwitchToEast";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_ModuleSwitchUnits";
+							typeName="SwitchToIndependent";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ACE_ModuleSwitchUnits";
+							typeName="SwitchToCivilian";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ACE_ModuleSwitchUnits";
+							typeName="EnableSafeZone";
+						};
+						class Item5
+						{
+							value="100";
+							parentCls="ACE_ModuleSwitchUnits";
+							typeName="SafeZoneRadius";
+						};
+					};
+					id=10;
+					side="LOGIC";
+					vehicle="ACE_ModuleSwitchUnits";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item11
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6424.5825,6.9900022,1925.5856};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="0";
+							parentCls="ACE_ModuleHearing";
+							typeName="EnableCombatDeafness";
+						};
+					};
+					id=11;
+					side="LOGIC";
+					vehicle="ACE_ModuleHearing";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item12
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7224.2598,7,1929.5719};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_finger_moduleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="7";
+							parentCls="ace_finger_moduleSettings";
+							typeName="maxRange";
+						};
+					};
+					id=12;
+					side="LOGIC";
+					vehicle="ace_finger_moduleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8068.0332,7,1666.7422};
+					azimut=-124.82;
+					id=13;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="cnto_gm";
+					init="nul = [this,""mcc""] spawn cnto_fnc_unitSetup;";
+					description="MCC Game Master";
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8055.6943,7,1663.8267};
+					azimut=-292.94199;
+					id=14;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this,""sl""] spawn cnto_fnc_unitSetup;";
+					description="Squad Leader";
+				};
+				class Item1
+				{
+					position[]={8049.6182,7,1666.7954};
+					azimut=-292.94199;
+					id=15;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""medic""] spawn cnto_fnc_unitSetup;";
+					description="Combat Medic";
+				};
+			};
+		};
+		class Item15
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={8039.1904,7,1667.9937};
+					azimut=-269.564;
+					id=16;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this,""ftl""] spawn cnto_fnc_unitSetup;";
+					description="Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8033.5068,7,1679.4985};
+					azimut=-269.564;
+					id=17;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""aar""] spawn cnto_fnc_unitSetup;";
+					description="Assistant Autorifleman";
+				};
+				class Item2
+				{
+					position[]={8033.7588,7,1672.0093};
+					azimut=-269.564;
+					id=18;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""ar""] spawn cnto_fnc_unitSetup; ";
+					description="Autorifleman";
+				};
+				class Item3
+				{
+					position[]={8033.8096,7,1662.4087};
+					azimut=-269.564;
+					id=19;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""rifle""] spawn cnto_fnc_unitSetup;";
+					description="Rifleman";
+				};
+				class Item4
+				{
+					position[]={8033.5146,7,1648.4614};
+					azimut=-269.564;
+					id=20;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""at""] spawn cnto_fnc_unitSetup;";
+					description="Anti-Tank Specialist";
+				};
+				class Item5
+				{
+					position[]={8033.8975,7,1655.5337};
+					azimut=-269.564;
+					id=21;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""rifle""] spawn cnto_fnc_unitSetup;";
+					description="Rifleman";
+				};
+			};
+		};
+		class Item16
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={8050.9541,7,1646.5991};
+					azimut=15.6162;
+					id=22;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this,""ftl""] spawn cnto_fnc_unitSetup;";
+					description="Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8038.3662,7,1644.1235};
+					azimut=15.6162;
+					id=23;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""aar""] spawn cnto_fnc_unitSetup;";
+					description="Assistant Autorifleman";
+				};
+				class Item2
+				{
+					position[]={8045.6572,7,1642.4048};
+					azimut=15.6162;
+					id=24;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""ar""] spawn cnto_fnc_unitSetup;";
+					description="Autorifleman";
+				};
+				class Item3
+				{
+					position[]={8054.9365,7,1639.9419};
+					azimut=15.6162;
+					id=25;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""rifle""] spawn cnto_fnc_unitSetup;";
+					description="Rifleman";
+				};
+				class Item4
+				{
+					position[]={8061.585,7,1638.2241};
+					azimut=15.6162;
+					id=26;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""rifle""] spawn cnto_fnc_unitSetup;";
+					description="Rifleman";
+				};
+				class Item5
+				{
+					position[]={8068.3232,7,1636.0015};
+					azimut=15.6162;
+					id=27;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""at""] spawn cnto_fnc_unitSetup;";
+					description="Anti-Tank Specialist";
+				};
+			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8059.3877,7,1655.3384};
+					azimut=61.997898;
+					id=28;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this,""sl""] spawn cnto_fnc_unitSetup;";
+					description="Squad Leader";
+				};
+				class Item1
+				{
+					position[]={8053.0752,7,1657.7612};
+					azimut=61.997898;
+					id=29;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""medic""] spawn cnto_fnc_unitSetup;";
+					description="Combat Medic";
+				};
+			};
+		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={8028.3662,7,1666.9858};
+					azimut=81.699799;
+					id=30;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this,""ftl""] spawn cnto_fnc_unitSetup;";
+					description="Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8021.0088,7,1677.4839};
+					azimut=81.699799;
+					id=31;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""aar""] spawn cnto_fnc_unitSetup; ";
+					description="Assistant Autorifleman";
+				};
+				class Item2
+				{
+					position[]={8022.3877,7,1670.1255};
+					azimut=81.699799;
+					id=32;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""ar""] spawn cnto_fnc_unitSetup; ";
+					description="Autorifleman";
+				};
+				class Item3
+				{
+					position[]={8023.8994,7,1660.6401};
+					azimut=81.699799;
+					id=33;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""rifle""] spawn cnto_fnc_unitSetup;";
+					description="Rifleman";
+				};
+				class Item4
+				{
+					position[]={8025.0244,7,1653.8657};
+					azimut=81.699799;
+					id=34;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""rifle""] spawn cnto_fnc_unitSetup;";
+					description="Rifleman";
+				};
+				class Item5
+				{
+					position[]={8025.7236,7,1646.812};
+					azimut=81.699799;
+					id=35;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""at""] spawn cnto_fnc_unitSetup;";
+					description="Anti-Tank Specialist";
+				};
+			};
+		};
+		class Item19
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={8048.9912,7,1637.7163};
+					azimut=17.152399;
+					id=36;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this,""ftl""] spawn cnto_fnc_unitSetup;";
+					description="Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8036.3447,7,1635.5884};
+					azimut=17.152399;
+					id=37;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""aar""] spawn cnto_fnc_unitSetup;";
+					description="Assistant Autorifleman";
+				};
+				class Item2
+				{
+					position[]={8043.585,7,1633.6714};
+					azimut=17.152399;
+					id=38;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""ar""] spawn cnto_fnc_unitSetup;";
+					description="Autorifleman";
+				};
+				class Item3
+				{
+					position[]={8052.7959,7,1630.9595};
+					azimut=17.152399;
+					id=39;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""rifle""] spawn cnto_fnc_unitSetup;";
+					description="Rifleman";
+				};
+				class Item4
+				{
+					position[]={8066.0693,7,1626.6616};
+					azimut=17.152399;
+					id=40;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""at""] spawn cnto_fnc_unitSetup;";
+					description="Anti-Tank Specialist";
+				};
+				class Item5
+				{
+					position[]={8059.4014,7,1629.064};
+					azimut=17.152399;
+					id=41;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""rifle""] spawn cnto_fnc_unitSetup;";
+					description="Rifleman";
+				};
+			};
+		};
+		class Item20
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={8029.9229,7,1641.5649};
+					azimut=50.647099;
+					id=42;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this,""crew""] spawn cnto_fnc_unitSetup;";
+					description="Vehicle Crewman";
+				};
+				class Item1
+				{
+					position[]={8024.5615,7,1641.5728};
+					azimut=50.647099;
+					id=43;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""crew""] spawn cnto_fnc_unitSetup;";
+					description="Vehicle Crewman";
+				};
+				class Item2
+				{
+					position[]={8029.1904,7,1635.9321};
+					azimut=50.647099;
+					id=44;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""crew""] spawn cnto_fnc_unitSetup;";
+					description="Vehicle Crewman";
+				};
+			};
+		};
+		class Item21
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8016.9111,7,1663.6304};
+					azimut=66.941902;
+					id=45;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [this,""ftl""] spawn cnto_fnc_unitSetup;";
+					description="Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={8008.96,7,1668.2964};
+					azimut=66.941902;
+					id=46;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""expSpec""] spawn cnto_fnc_unitSetup;";
+					description="Explosives Specialist";
+				};
+				class Item2
+				{
+					position[]={8018.5576,7,1646.439};
+					azimut=66.941902;
+					id=47;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""grenAsst""] spawn cnto_fnc_unitSetup;";
+					description="Assistant Grenadier";
+				};
+				class Item3
+				{
+					position[]={8014.5127,7,1653.4048};
+					azimut=66.941902;
+					id=48;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="nul = [this,""gren""] spawn cnto_fnc_unitSetup;";
+					description="Grenadier";
+				};
+			};
+		};
+		class Item22
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7126.5796,7,1928.069};
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="2";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="level";
+						};
+						class Item1
+						{
+							value="2";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="medicSetting";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="allowLitterCreation";
+						};
+						class Item3
+						{
+							value="1800";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="litterCleanUpDelay";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="enableScreams";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="playerDamageThreshold";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="AIDamageThreshold";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="enableUnconsciousnessAI";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="remoteControlledAI";
+						};
+						class Item9
+						{
+							value="0";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="preventInstaDeath";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="bleedingCoefficient";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="painCoefficient";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="keepLocalSettingsSynced";
+						};
+					};
+					id=49;
+					side="LOGIC";
+					vehicle="ACE_moduleMedicalSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item23
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7128.2183,7,1827.0348};
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="enableFor";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="enableAdvancedWounds";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="enableVehicleCrashes";
+						};
+						class Item3
+						{
+							value="2";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="medicSetting_PAK";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="consumeItem_PAK";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useCondition_PAK";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useLocation_PAK";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="medicSetting_SurgicalKit";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="consumeItem_SurgicalKit";
+						};
+						class Item9
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useLocation_SurgicalKit";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useCondition_SurgicalKit";
+						};
+						class Item11
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="healHitPointAfterAdvBandage";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="painIsOnlySuppressed";
+						};
+					};
+					id=50;
+					side="LOGIC";
+					vehicle="ACE_moduleAdvancedMedicalSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item24
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7125.8906,7,1727.2809};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="cnto_gm";
+							parentCls="ACE_moduleAssignMedicRoles";
+							typeName="EnableList";
+						};
+						class Item1
+						{
+							value="2";
+							parentCls="ACE_moduleAssignMedicRoles";
+							typeName="role";
+						};
+					};
+					id=51;
+					side="LOGIC";
+					vehicle="ACE_moduleAssignMedicRoles";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=10;
+		class Item0
+		{
+			position[]={8012.7104,7,1634.3773};
+			azimut=225.15977;
+			offsetY=0.0027465799;
+			id=52;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_F";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={8014.1445,7,1631.5806};
+			azimut=224.86278;
+			offsetY=0.0027771001;
+			id=53;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_F";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={8014.7378,7,1631.2089};
+			azimut=230.71178;
+			offsetY=0.0027465799;
+			id=54;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_F";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={8013.7314,7,1632.2391};
+			azimut=224.75677;
+			offsetY=0.0027771001;
+			id=55;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_F";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={8012.3179,7,1635.0708};
+			azimut=224.85878;
+			offsetY=0.00280762;
+			id=56;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_F";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={8013.377,7,1632.8027};
+			azimut=234.53477;
+			offsetY=0.0027771001;
+			id=57;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_F";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={8014.7246,7,1634.2981};
+			azimut=241.79079;
+			id=58;
+			side="EMPTY";
+			vehicle="Box_FIA_Wps_F";
+			skill=0.60000002;
+			text="munBox";
+			init="[this] call cnto_fnc_setupMunitionsBox;";
+		};
+		class Item7
+		{
+			position[]={8013.9517,7,1635.3557};
+			azimut=250.56479;
+			id=59;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_medium_F";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={8015.2021,7,1633.3157};
+			azimut=250.56479;
+			id=60;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_medium_F";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={8013.061,7,1633.6594};
+			azimut=234.53477;
+			offsetY=0.0027771001;
+			id=61;
+			side="EMPTY";
+			vehicle="Land_MetalBarrel_F";
+			skill=0.60000002;
+		};
+	};
+	class Markers
+	{
+		items=7;
+		class Item0
+		{
+			position[]={8050.4014,7,1657.5337};
+			name="respawn_guerrila";
+			type="respawn_unknown";
+			colorName="ColorGUER";
+			a=0;
+			b=0;
+			angle=-81.632607;
+		};
+		class Item1
+		{
+			position[]={8176.2861,7,1860.2631};
+			name="us_flag_1";
+			type="flag_USA";
+		};
+		class Item2
+		{
+			position[]={15456.591,266.08545,15305.848};
+			name="R2_2_1_1_1_1_1";
+			text="Platoon: 148, C1";
+			type="mil_dot";
+			colorName="ColorWEST";
+		};
+		class Item3
+		{
+			position[]={15455.493,247.22469,15105.463};
+			name="R2_2_1_1";
+			text="Bravo Squad: 343, C2";
+			type="mil_dot";
+			colorName="ColorWEST";
+		};
+		class Item4
+		{
+			position[]={15455.985,270.8833,15208.239};
+			name="R2_1_1_1_1";
+			text="Alpha Squad: 343, C1";
+			type="mil_dot";
+			colorName="ColorWEST";
+		};
+		class Item5
+		{
+			position[]={8176.1719,7,1860.2734};
+			name="blufor_baseborder";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorWEST";
+			fillName="Border";
+			a=1000;
+			b=1000;
+			drawBorder=1;
+		};
+		class Item6
+		{
+			position[]={8014.7422,7,1634.3586};
+			name="munitions_marker";
+			text="Munitions Box";
+			type="mil_dot";
+			colorName="ColorGreen";
+			angle=122.04279;
+		};
+	};
+	class Sensors
+	{
+		items=3;
+		class Item0
+		{
+			position[]={2.5898104,0.28575841,1.7276001};
+			type="ERROR";
+			age="UNKNOWN";
+			expCond="call cba_common_fnc_monitorFrameRender";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={-0.46593714,0.28575841,2.6092529};
+			activationBy="ANY";
+			type="ERROR";
+			age="UNKNOWN";
+			expCond="call acre_sys_sync_fnc_perFrame_monitorFrameRender";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={0.2158125,0.28575841,-0.86242676};
+			type="ERROR";
+			age="UNKNOWN";
+			expCond="if ((cba_events_keypressed + 10) < time) then { call cba_events_fnc_attach_handler }";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis",
+		"aia_chernarus_summer_config"
+	};
+	randomSeed=36156;
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis",
+		"aia_chernarus_summer_config"
+	};
+	randomSeed=36156;
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis",
+		"aia_chernarus_summer_config"
+	};
+	randomSeed=36156;
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};

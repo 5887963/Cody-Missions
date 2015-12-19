@@ -1,0 +1,24 @@
+onLoadName = "Cinematic IED Test";
+onLoadMission = "Testing site for cinematic IED attacks";
+author = "Cody Burton";
+enableDebugConsole = 1;
+respawn = 3;
+respawndelay = 10;
+class CfgFunctions {
+	class cnto {
+		class events {
+			class iedTrig {};
+			class iedEff {};
+		};
+	};
+};
+class CfgSounds
+{
+	sounds[] = {};
+	class earRing
+	{
+		name = "earRing";
+		sound[] = {"\res\earRing.ogg", 0.8, 1};
+		titles[] = {0,""};
+	};
+};
