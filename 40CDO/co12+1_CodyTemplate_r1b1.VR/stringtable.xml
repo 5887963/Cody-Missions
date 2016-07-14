@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="cody">
+	<Package name="cody">
+		<Container name="META">
+			<Key ID="str_cody_loadName">
+				<Original>40cdo Template</Original>
+				<English>40cdo Template</English>
+			</Key>
+			<Key ID="str_cody_loadMission">
+				<Original>Template created for 40cdo.org</Original>
+				<English>Template created for 40cdo.org</English>
+			</Key>
+			<Key ID="str_cody_overviewText">
+				<Original>Template created for 40cdo.org (Overview Text)</Original>
+				<English>Template created for 40cdo.org (Overview Text)</English>
+			</Key>
+			<Key ID="str_cody_Author">
+				<Original>Cody Burton</Original>
+				<English>Cody Burton</English>
+			</Key>
+			<Key ID="str_cody_uavBrief">
+				<Original>this is a fokin brief m8</Original>
+				<English>this is a fokin brief m8</English>
+			</Key>
+		</Container>
+	</Package>
+</Project>

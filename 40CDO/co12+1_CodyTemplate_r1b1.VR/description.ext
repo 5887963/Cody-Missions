@@ -1,0 +1,25 @@
+disableChannels[]={1,2,3,4,5,6};
+respawnDialog = 0;
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 33;
+};
+onLoadName = $STR_cody_loadName;
+onLoadMission = $STR_cody_loadMission;
+author = $STR_cody_Author;
+loadScreen = "img\load.jpg";
+enableDebugConsole = 1;
+respawn = 3;
+respawndelay = 10;
+respawnOnStart = 0;
+class CfgFunctions
+{
+	class cody {
+		class init {
+			class unitInit{};
+			class arsenalBoxInit{};
+		};
+	};
+};
